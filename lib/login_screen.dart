@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class LoginScreen3 extends StatefulWidget {
+class LoginScreen extends StatefulWidget {
   @override
   _LoginScreenState createState() => new _LoginScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen3>
+class _LoginScreenState extends State<LoginScreen>
     with TickerProviderStateMixin {
 
   @override
