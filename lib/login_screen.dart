@@ -491,7 +491,7 @@ class _LoginScreenState extends State<LoginScreen3>
                               children: <Widget>[
                                 new Expanded(
                                   child: Text(
-                                    "LOGIN",
+                                    "Register",
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                         color: Colors.white,
