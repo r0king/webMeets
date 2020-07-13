@@ -194,7 +194,7 @@ class _LoginScreenState extends State<LoginScreen>
                     textAlign: TextAlign.left,
                     decoration: InputDecoration(
                       border: InputBorder.none,
-                      hintText: 'samarthagarwal@live.com',
+                      hintText: 'samplemail@live.com',
                       hintStyle: TextStyle(color: Colors.grey),
                     ),
                   ),
@@ -332,7 +332,7 @@ class _LoginScreenState extends State<LoginScreen>
 
               children: <Widget>[
                 Container(
-                  padding: EdgeInsets.all(30),
+                  padding: EdgeInsets.only(top: 70),
                   alignment: Alignment.center,
                   child: Center(
                     child: Icon(Icons.recent_actors,
@@ -347,7 +347,7 @@ class _LoginScreenState extends State<LoginScreen>
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-
+                    padding: EdgeInsets.only(top: 50),
                       child: Text("Sign Up",
                         style: TextStyle(
                           color: Colors.greenAccent,
@@ -359,14 +359,14 @@ class _LoginScreenState extends State<LoginScreen>
                   ],
                 )
                 ,Container(
-                padding: EdgeInsets.only(left: 30,right: 30),
+                padding: EdgeInsets.only(left: 45,right: 45),
                   child:
                     TextField(
 
                     maxLength: 20
                     ,
                       style: TextStyle(
-                        fontSize: 20
+                        fontSize:17
                       ,
                       ),
 
@@ -374,43 +374,46 @@ class _LoginScreenState extends State<LoginScreen>
                       decoration: InputDecoration(
                         hoverColor: Colors.greenAccent,
                         focusColor: Colors.greenAccent,
-                        labelText: 'Name'
+                        hintText: 'Name',
+                        hintStyle: TextStyle(color: Colors.grey)
 
                       ),
 
                     ),
 
                 ),Container(
-                  padding: EdgeInsets.only(left: 30,right: 30),
+                  padding: EdgeInsets.only(left: 45,right: 45),
                   child:
                   TextField(
 
                     maxLength: 20
                     ,
                     style: TextStyle(
-                      fontSize: 20
+                      fontSize:17
                       ,
                     ),
 
                     cursorColor: Colors.greenAccent,
                     decoration: InputDecoration(
+
                         hoverColor: Colors.greenAccent,
                         focusColor: Colors.greenAccent,
-                        labelText: 'Mail'
+                        hintText: 'Mail',
+                        hintStyle: TextStyle(color: Colors.grey)
 
                     ),
 
                   ),
 
                 ),Container(
-                  padding: EdgeInsets.only(left: 30,right: 30),
+                  padding: EdgeInsets.only(left: 45,right: 45),
                   child:
                   TextField(
 
                     maxLength: 20
                     ,
                     style: TextStyle(
-                      fontSize: 20
+                      fontSize:17
                       ,
                     ),
 
@@ -418,21 +421,23 @@ class _LoginScreenState extends State<LoginScreen>
                     decoration: InputDecoration(
                         hoverColor: Colors.greenAccent,
                         focusColor: Colors.greenAccent,
-                        labelText: 'Phone Number'
+                        hintText: 'Phone Number',
+                        hintStyle: TextStyle(color: Colors.grey)
+
 
                     ),
 
                   ),
 
                 ),Container(
-                  padding: EdgeInsets.only(left: 30,right: 30),
+                  padding: EdgeInsets.only(left: 45,right: 45),
                   child:
                   TextField(
 
                     maxLength: 20
                     ,
                     style: TextStyle(
-                      fontSize: 20
+                      fontSize:17
                       ,
                     ),
 
@@ -440,21 +445,23 @@ class _LoginScreenState extends State<LoginScreen>
                     decoration: InputDecoration(
                         hoverColor: Colors.greenAccent,
                         focusColor: Colors.greenAccent,
-                        labelText: 'Password'
+                        hintText: 'Password',
+                        hintStyle: TextStyle(color: Colors.grey)
+
 
                     ),obscureText: true,
 
                   ),
 
                 ),Container(
-                  padding: EdgeInsets.only(left: 30,right: 30),
+                  padding: EdgeInsets.only(left: 45,right: 45),
                   child:
                   TextField(
 
                     maxLength: 20
                     ,
                     style: TextStyle(
-                      fontSize: 20
+                      fontSize:17
                       ,
                     ),
 
@@ -462,7 +469,9 @@ class _LoginScreenState extends State<LoginScreen>
                     decoration: InputDecoration(
                         hoverColor: Colors.greenAccent,
                         focusColor: Colors.greenAccent,
-                        labelText: 'Re-enter password'
+                        hintText: 'Re-enter password',
+                        hintStyle: TextStyle(color: Colors.grey)
+
 
                     ),
                     obscureText: true,
