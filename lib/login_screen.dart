@@ -535,16 +535,16 @@ class _LoginScreenState extends State<LoginScreen>
     );
   }
 
-  PageController _controller = new PageController(initialPage: 1, viewportFraction: 1.0);
+  PageController _controller = new PageController(initialPage: 1, viewportFraction: 1.0,keepPage: true);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: MediaQuery.of(context).size.height,
+
         child: PageView(
           controller: _controller,
-          children: <Widget>[LoginPage(), HomePage(), SignupPage()],
-          scrollDirection: Axis.horizontal,
+          children:[LoginPage(), HomePage(), SignupPage()],
+
         ));
   }
 }
