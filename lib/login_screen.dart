@@ -43,11 +43,13 @@ class _LoginScreenState extends State<LoginScreen>
                   maxLines: 1,
 
                   style: TextStyle(
+                  letterSpacing: 2,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
-                    fontFamily: 'Open Sans'
+                    fontFamily: 'Modern'
                       ,decoration: TextDecoration.none,
-                    fontSize: 50
+                    fontSize: 50,
+
                   ),
                 )
 
@@ -117,6 +119,7 @@ class _LoginScreenState extends State<LoginScreen>
                               style: TextStyle(
                                   color: Colors.greenAccent,
                                   fontWeight: FontWeight.bold),
+
                             ),
                           ),
                         ],

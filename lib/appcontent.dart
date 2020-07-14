@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_login_screens/login_screen.dart';
 import 'package:flutter_login_screens/webinarpage.dart';
@@ -22,8 +23,8 @@ class Welcome extends StatelessWidget {
           body:
           Center(
 
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
 
@@ -35,10 +36,10 @@ class Welcome extends StatelessWidget {
 
                         fontSize: 50,
                       color: Colors.white,
-                      fontFamily: 'Action'
+                      fontFamily: 'Modern'
                     ),
 
-                  ),padding: EdgeInsets.only(left: 90,top: 30),
+                  ),padding: EdgeInsets.all(10),
 
                 ),
                 IconButton(
@@ -49,6 +50,7 @@ class Welcome extends StatelessWidget {
                 )
                   ,alignment: Alignment.center,
                   hoverColor: Colors.green,
+                  padding: EdgeInsets.only(bottom: 35,right: 35,top:10),
                   onPressed: (){
 
                     Navigator.push(context, MaterialPageRoute(
@@ -70,7 +72,36 @@ class Welcome extends StatelessWidget {
             ,
           )
           ,
+          bottomNavigationBar: BottomNavigationBar(
+             items: <BottomNavigationBarItem>[
+               BottomNavigationBarItem(icon: Icon(
+                 Icons.contacts,
+               )
+               ,title: Text("Contacts")
+                   ,
+
+               ),
+               BottomNavigationBarItem(icon: Icon(
+                 Icons.camera_enhance,
+               )
+                 ,title: Text("Meets")
+                 ,
+
+               ),
+               BottomNavigationBarItem(icon: Icon(
+                 Icons.personal_video,
+               )
+                 ,title: Text("Contacts")
+                 ,
+
+               ),
+
+             ]
+
+
+          ),
         )
+
     );
   }
 }
