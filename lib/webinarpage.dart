@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_login_screens/curved_navigation_bar.dart';
 class Thewebinarpage extends StatefulWidget {
   @override
   _ThewebinarpageState createState() => _ThewebinarpageState();
@@ -25,44 +26,35 @@ class _ThewebinarpageState extends State<Thewebinarpage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
+
       child: Scaffold(
+        backgroundColor: Colors.greenAccent,
         body:_tabs[_indexcurr],
 
 
         bottomNavigationBar:
-        BottomNavigationBar(
-            currentIndex: _indexcurr,
-            type: BottomNavigationBarType.shifting,
+        CurvedNavigationBar(
 
-            backgroundColor: Colors.tealAccent,
-            items: <BottomNavigationBarItem>[
-              BottomNavigationBarItem(
-                backgroundColor: Colors.teal,
-                icon: Icon(
-                  Icons.contacts,
-                ),
-                title: Text("Contacts"),
-              ),
-              BottomNavigationBarItem(
-                backgroundColor: Colors.teal,
-                icon: Icon(
+            height: 60,
+            backgroundColor: Colors.greenAccent,
+            items: <Widget>[
+               Icon(
+                  Icons.contacts,),
+              Icon(
                   Icons.camera_enhance,
                 ),
-                title: Text("Meets"),
-              ),
-              BottomNavigationBarItem(
-                backgroundColor: Colors.teal,
-                  icon: Icon(
+              Icon(
                     Icons.language,
                   ),
-                  title: Text("Global"),
-              ),
             ]
         ,onTap: (index){
               setState(() {
                 _indexcurr=index;
               });
         },
+          animationDuration: Duration(
+            milliseconds: 200,
+          ),
 
 
         ),

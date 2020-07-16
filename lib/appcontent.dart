@@ -7,12 +7,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Welcome(),
+      home: _Welcome(),
     );
   }
 }
 
-class Welcome extends StatelessWidget {
+class _Welcome extends StatefulWidget {
+  @override
+  __WelcomeState createState() => __WelcomeState();
+}
+
+class __WelcomeState extends State<_Welcome> {
   bool logedin=true;
 
   @override

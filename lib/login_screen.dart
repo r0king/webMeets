@@ -16,7 +16,7 @@ class _LoginScreenState extends State<LoginScreen>
 
   }
 
-  Widget HomePage() {
+  Widget homePage() {
     return new Container(
       height: MediaQuery.of(context).size.height,
       decoration: BoxDecoration(
@@ -135,8 +135,7 @@ class _LoginScreenState extends State<LoginScreen>
     );
   }
 
-  Widget LoginPage() {
-    return new
+  Widget _loginPage() => new
     Scaffold(
     body:
     Container(
@@ -324,9 +323,9 @@ class _LoginScreenState extends State<LoginScreen>
       ),
     )
     );
-  }
+  
 
-  Widget SignupPage() {
+  Widget signupPage() {
     return
       SafeArea(child:   Scaffold(
         body:
@@ -558,7 +557,7 @@ class _LoginScreenState extends State<LoginScreen>
 
         child: PageView(
           controller: _controller,
-          children:[LoginPage(), HomePage(), SignupPage()],
+          children:[_loginPage(), homePage(), signupPage()],
 
         ));
   }
