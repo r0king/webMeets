@@ -7,7 +7,7 @@ class Thewebinarpage extends StatefulWidget {
 class _ThewebinarpageState extends State<Thewebinarpage> {
 
   int _indexcurr=1;
-  final tabs = <Widget>[
+  final _tabs = <Widget>[
     Center(
       child: Text("data"),
     ),
@@ -16,6 +16,9 @@ class _ThewebinarpageState extends State<Thewebinarpage> {
     )
   ,
 
+    Container(
+      child: Text("hello World"),
+    )
   ];
 
 
@@ -23,9 +26,9 @@ class _ThewebinarpageState extends State<Thewebinarpage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Container(
-          color: Colors.greenAccent,
-        ),
+        body:_tabs[_indexcurr],
+
+
         bottomNavigationBar:
         BottomNavigationBar(
             currentIndex: _indexcurr,
