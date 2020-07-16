@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
 }
 
 class Welcome extends StatelessWidget {
-  bool logedin=false;
+  bool logedin=true;
 
   @override
   Widget build(BuildContext context) {
@@ -71,35 +71,7 @@ class Welcome extends StatelessWidget {
             )
             ,
           )
-          ,
-          bottomNavigationBar: BottomNavigationBar(
-             items: <BottomNavigationBarItem>[
-               BottomNavigationBarItem(icon: Icon(
-                 Icons.contacts,
-               )
-               ,title: Text("Contacts")
-                   ,
 
-               ),
-               BottomNavigationBarItem(icon: Icon(
-                 Icons.camera_enhance,
-               )
-                 ,title: Text("Meets")
-                 ,
-
-               ),
-               BottomNavigationBarItem(icon: Icon(
-                 Icons.personal_video,
-               )
-                 ,title: Text("Contacts")
-                 ,
-
-               ),
-
-             ]
-
-
-          ),
         )
 
     );
