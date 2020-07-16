@@ -1,4 +1,7 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_login_screens/curved_navigation_bar.dart';
 
 class Thewebinarpage extends StatefulWidget {
@@ -8,6 +11,7 @@ class Thewebinarpage extends StatefulWidget {
 
 class _ThewebinarpageState extends State<Thewebinarpage> {
   int _indexcurr = 1;
+
   final _tabs = <Widget>[
     Center(
       child: Text("Contacts"),
@@ -20,10 +24,47 @@ class _ThewebinarpageState extends State<Thewebinarpage> {
     )
   ];
 
+  Future<bool> _onBackpressed(){
+    return showDialog(context: context,
+    builder: (context)=>AlertDialog(
+      title: Text("Are you sure"),
+      content: Text("all ongoing meets will be terminated"),
+      actions: <Widget>[
+        FlatButton(onPressed: (){
+
+          SystemNavigator.pop();
+
+
+        },
+        child: Text("Yes"),
+
+        ),
+        FlatButton(
+          child: Text("No"),
+          onPressed: (){
+            Navigator.pop(context,false);
+          },
+        )
+      ],
+    )
+    );
+  }
+
+
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return WillPopScope(
+      onWillPop: _onBackpressed,
       child: Scaffold(
+        appBar: new AppBar(
+          title: Text("Web meets",textAlign: TextAlign.center,),
+          backgroundColor: Colors.teal,
+          actions: [
+            BackButtonIcon(
+
+            ),
+          ],
+        ),
         backgroundColor: Colors.greenAccent,
         body: _tabs[_indexcurr],
         bottomNavigationBar: CurvedNavigationBar(
