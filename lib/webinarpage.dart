@@ -28,18 +28,18 @@ class _ThewebinarpageState extends State<Thewebinarpage> {
         body: _tabs[_indexcurr],
         bottomNavigationBar: CurvedNavigationBar(
 
-          height: 60,
+          height: 50,
           backgroundColor: Colors.greenAccent,
           items: <Widget>[
             Icon(
-              Icons.contacts,size: 40,color: Colors.teal
+              Icons.contacts,size: 35,color: Colors.teal
               ,
             ),
             Icon(
-              Icons.camera_enhance,size: 40,color: Colors.teal,
+              Icons.camera_enhance,size: 35,color: Colors.teal,
             ),
             Icon(
-              Icons.language,size: 40,color: Colors.teal,
+              Icons.language,size: 35,color: Colors.teal,
 
             ),
           ],
