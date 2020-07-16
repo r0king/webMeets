@@ -9,15 +9,15 @@ class _ThewebinarpageState extends State<Thewebinarpage> {
   int _indexcurr=1;
   final _tabs = <Widget>[
     Center(
-      child: Text("data"),
+      child: Text("Contacts"),
     ),
     Container(
-      child: Text("hello World"),
+      child: Text("Meets"),
     )
   ,
 
     Container(
-      child: Text("hello World"),
+      child: Text("Global meets"),
     )
   ];
 
