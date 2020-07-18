@@ -194,7 +194,7 @@ class _LoginScreenState extends State<LoginScreen>
                   child: TextField(
                     obscureText: true,
                     textAlign: TextAlign.left,
-                    decoration: InputDecoration(
+                    decoration: InputDecoration.collapsed(
                       border: InputBorder.none,
                       hintText: 'samplemail@live.com',
                       hintStyle: TextStyle(color: Colors.grey),
@@ -245,7 +245,7 @@ class _LoginScreenState extends State<LoginScreen>
                   child: TextField(
                     obscureText: true,
                     textAlign: TextAlign.left,
-                    decoration: InputDecoration(
+                    decoration: InputDecoration.collapsed(
                       border: InputBorder.none,
                       hintText: '*********',
                       hintStyle: TextStyle(color: Colors.grey),
@@ -376,7 +376,7 @@ class _LoginScreenState extends State<LoginScreen>
                       ),
 
                       cursorColor: Colors.greenAccent,
-                      decoration: InputDecoration(
+                      decoration: InputDecoration.collapsed(
                         hoverColor: Colors.greenAccent,
                         focusColor: Colors.greenAccent,
                         hintText: 'Name',
@@ -399,7 +399,7 @@ class _LoginScreenState extends State<LoginScreen>
                     ),
 
                     cursorColor: Colors.greenAccent,
-                    decoration: InputDecoration(
+                    decoration: InputDecoration.collapsed(
 
                         hoverColor: Colors.greenAccent,
                         focusColor: Colors.greenAccent,
@@ -423,7 +423,7 @@ class _LoginScreenState extends State<LoginScreen>
                     ),
 
                     cursorColor: Colors.greenAccent,
-                    decoration: InputDecoration(
+                    decoration: InputDecoration.collapsed(
                         hoverColor: Colors.greenAccent,
                         focusColor: Colors.greenAccent,
                         hintText: 'Phone Number',
@@ -447,7 +447,7 @@ class _LoginScreenState extends State<LoginScreen>
                     ),
 
                     cursorColor: Colors.greenAccent,
-                    decoration: InputDecoration(
+                    decoration: InputDecoration.collapsed(
                         hoverColor: Colors.greenAccent,
                         focusColor: Colors.greenAccent,
                         hintText: 'Password',
@@ -471,7 +471,7 @@ class _LoginScreenState extends State<LoginScreen>
                     ),
 
                     cursorColor: Colors.greenAccent,
-                    decoration: InputDecoration(
+                    decoration: InputDecoration.collapsed(
                         hoverColor: Colors.greenAccent,
                         focusColor: Colors.greenAccent,
                         hintText: 'Re-enter password',
@@ -535,7 +535,7 @@ class _LoginScreenState extends State<LoginScreen>
   gotoLogin() {
     _controller.animateToPage(
       0,
-      duration: Duration(milliseconds: 500),
+      duration: Duration(milliseconds: 400),
       curve: Curves.decelerate,
     );
   }
@@ -544,7 +544,7 @@ class _LoginScreenState extends State<LoginScreen>
     //controller_minus1To0.reverse(from: 0.0);
     _controller.animateToPage(
       2,
-      duration: Duration(milliseconds: 800),
+      duration: Duration(milliseconds: 400),
       curve: Curves.decelerate,
     );
   }

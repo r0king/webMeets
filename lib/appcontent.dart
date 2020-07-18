@@ -19,7 +19,7 @@ class _Welcome extends StatefulWidget {
 }
 
 class _WelcomeState extends State<_Welcome> {
-  bool logedin=true;
+  bool logedin=false;
   _WelcomeState(){
 
     SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
